@@ -1,5 +1,5 @@
 # Detection of outliers using Autoencoder  (Deep learning project)
-Yun RU & Xuran HUANG
+By Yun RU & Xuran HUANG
 
 <img src="https://github.com/ruyunnuyur/Deep-learning-project/blob/6e812364ccad1bd64d5e10f6fbe37bce35ef3dad/1_F_yiILIE954AZPgPADx76A.png" width="500" height="300">
 
