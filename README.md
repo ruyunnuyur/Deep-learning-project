@@ -7,6 +7,8 @@ By Yun RU & Xuran HUANG
 There exists many ways to detect anomaly, One-class SVMs, Elliptic Envelopes... These methods belong to the field of machine learning, however there are also many models for anomaly detection in deep learning area. Autoencoders, a type of unsupervised neural network, are exactly one of the models. In the following sections, we will apply three different autoencoders which are simple autoencoder, deep fully-connected autoencoder and variational autoencoder, to detect the outliers in the datasets that we built based on MNIST data and fashionMNIST data and compare their results.
 
 ## How to detect the outliers by using autoencoder
+<img src="https://github.com/ruyunnuyur/Deep-learning-project/blob/6e812364ccad1bd64d5e10f6fbe37bce35ef3dad/1_F_yiILIE954AZPgPADx76A.png" width="500" height="300">
+The algorithm of autoencoder is composed by two parts: encoder and decoder.  
 ## Data discription (MNIST)
 How we build our train set and test set
 ## Three methods applied and their performances
