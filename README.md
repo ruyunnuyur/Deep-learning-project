@@ -4,7 +4,7 @@ By Yun RU & Xuran HUANG
 <img src="https://github.com/ruyunnuyur/Deep-learning-project/blob/6e812364ccad1bd64d5e10f6fbe37bce35ef3dad/1_F_yiILIE954AZPgPADx76A.png" width="500" height="300">
 
 ## Introduction
-There exists many ways to detect anomaly, One-class SVMs, Elliptic Envelopes... These methods belong to the field of machine learning, however there are also many models for anomaly detection in deep learning area. Autoencoders, a type of unsupervised neural network, are exactly one of the models. In the following sections, we will apply three different autoencoders which are simple autoencoder, deep fully-connected autoencoder and variational autoencoder, to detect the outliers in the datasets that we built based on MNIST data and fashionMNIST data and compare their results.
+There exists many ways to detect anomaly, One-class SVMs, Elliptic Envelopes... These methods belong to the field of machine learning, however there are also many models for anormaly detection in deep learning area. Autoencoders, a type of unsupervised neural network, are exactly one of the models. In the following sections, we will apply three different autoencoders which are simple autoencoder, deep fully-connected autoencoder and variational autoencoder, to detect the outliers in the datasets that we built based on MNIST data and fashionMNIST data and compare their results.
 
 ## How to detect the outliers by using autoencoder
 <img src="autoencoder_schema.jpg" width="600" height="200">
@@ -15,7 +15,10 @@ The algorithm of autoencoder is composed by two parts: encoder and decoder. The 
 Given the information above, how can autoencoder detect the outliers? Let's take the case of image for example. Imagine that we trained thousands of images of tiger, our autoencoder is familiar with the pictures of tiger and know how to reconsctruct them with the lowest loss. However, if we give the autoencoder an image of elephant, the autoencoder do not know how to recontruct it into an elephant and the output image will look different from the original image, hence we obtain a high MSE for the outliers. By looking for the observations who have a high MSE between the reconstructed image and original image, we will find the outliers!
 
 ## Data discription (MNIST)
-Novelty detection v.s. anomaly detection How we build our train set and test set
+<img src="autoencoder_schema.jpg" width="600" height="200">
+MNIST Dataset
+MNIST is a large database containing 70 000 handwritten digits images. 60 000 of them are in the built-in training set and 10 000 are in the built-in test set. In order to adapt to our frame work of anomaly detection, we have to rebuild the training set and test set. Before doing so, we want to distinguish two conceptions: novelty detection and anormaly detection
+
 ## Three methods applied and their performances
 ## Applied on another dataset (FashionMNIST)
 ## Strengths and Weaknesses
