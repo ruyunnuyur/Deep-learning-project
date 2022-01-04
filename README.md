@@ -18,7 +18,7 @@ Given the information above, how can autoencoder detect the outliers? Let's take
 <img src="MnistExamples.png" width="500" height="300">
 
 ### MNIST Dataset
-MNIST is a large database containing 70 000 handwritten digits images. 60 000 of them are in the built-in training set and 10 000 are in the built-in test set. Each image is stored as a 28*28 matrix of pixel. Since we can not train each image as matrix, we flatten the 28*28 matrix into a vector with 784 elements and we normalize the data. We also possess a label variable which indicates the digit number of the image. In order to adapt to our framework of anormaly detection, we have to rebuild the training set and test set. Before doing so, we want to distinguish two conceptions: novelty detection and anormaly detection. 
+MNIST is a large database containing 70 000 handwritten digits images. 60 000 of them are in the built-in training set and 10 000 are in the built-in test set. Each image is stored as a 28\*28 matrix of pixel. Since we can not train each image as matrix, we flatten the 28\*28 matrix into a vector with 784 elements and we normalize the data. We also possess a label variable which indicates the digit number of the image. In order to adapt to our framework of anormaly detection, we have to rebuild the training set and test set. Before doing so, we want to distinguish two conceptions: novelty detection and anormaly detection. 
 
 **Novelty detection**: The training data consists only of normal observations but the test set contains some new data that the training model has never seen.
 
