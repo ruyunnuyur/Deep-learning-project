@@ -14,7 +14,7 @@ The algorithm of autoencoder is composed by two parts: encoder and decoder. The 
 
 Given the information above, how can autoencoder detect the outliers? Let's take the case of image for example. Imagine that we trained thousands of images of tiger, our autoencoder is familiar with the pictures of tiger and know how to reconsctruct them with the lowest loss. However, if we give the autoencoder an image of elephant, the autoencoder do not know how to recontruct it into an elephant and the output image will look different from the original image, hence we obtain a high MSE for the outliers. By looking for the observations who have a high MSE between the reconstructed image and original image, we will find the outliers!
 
-## Data discription (MNIST & FashionMNIST)
+## Data discription (MNIST & Fashion MNIST)
 <img src="MnistExamples.png" width="500" height="300">
 
 ### MNIST Dataset
@@ -32,7 +32,12 @@ As we want to do the anomaly detection, we will include a small amount of anomal
 
 We will use these 2 data frameworks to apply the autoencoder model.
 
-### FashionMNIST Dataset
+### Fashion MNIST Dataset
+
+Similar to the MNIST dataset, the Fashion MINIST contains 60 000 images in the training set and 10 000 in the test set and the images are also stored as a 28\*28 matrix. The difference is that the images are changed to clothing images. There are ten types of clothing, their types matched the table number are as follow:
+
+0 T-shirt/top 1 Trouser 2 Pullover 3 Dress 4 Coat 5 Sandal 6 Shirt 7 Sneaker 8 Bag 9 Ankle boot
+
 
 ## Three methods applied and their performances
 ## What about other database? Applied on FashionMNIST
