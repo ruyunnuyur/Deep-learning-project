@@ -24,8 +24,13 @@ MNIST is a large database containing 70 000 handwritten digits images. 60 000 of
 
 **Anomaly detection**: The training data consists of both normal data and anomalies.
 
-As we want to do the anomaly detection, we will include a small amount of anomalies in the training set. We built two data framework, the detailed information is as follow:
+As we want to do the anomaly detection, we will include a small amount of anomalies in the training set. We built two data frameworks, the detailed information is as follow:
 
+<img src="table.png" width="600" height="130">
+
+\* *The number of anomalies account for 10% of the number of normal data in both training set and test set, the valid label is the label of the normal and the anormal label is the label for the anomaly*
+
+### FashionMNIST Dataset
 
 ## Three methods applied and their performances
 ## What about other database? Applied on FashionMNIST
