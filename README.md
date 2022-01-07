@@ -24,7 +24,7 @@ MNIST is a large database containing 70 000 handwritten digits images. 60 000 of
 
 **Novelty detection**: The training data consists only of normal observations but the test set contains some new data that the training model has never seen.
 
-**Anomaly detection**: The training data consists of both normal data and anomalies.
+**Outlier detection**: The training data consists of both normal data and outliers.
 
 As we want to do the anomaly detection, we will include a small amount of anomalies in the training set. We built two data frameworks, the detailed information is as follow:
 
@@ -44,6 +44,7 @@ Similar to the MNIST dataset, the Fashion MINIST contains 60 000 images in the t
 
 
 ## Three methods applied and their performances
+
 ## What about other database? Applied on FashionMNIST
 ## Strengths and Weaknesses
 size of train set?
