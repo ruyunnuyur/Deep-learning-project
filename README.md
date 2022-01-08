@@ -71,7 +71,7 @@ First of all, we applied the simple autoencoder on the data framework 1 and data
 
 <img src="pictures/illustration.png" width="300" height="150">
 
-\* *These images are the outliers that are not detected in data framework 1. The first line is the original images and the second line is the corresponding reconstructed imgages. The reconstructed images looked quite similar to the original one, so their MSEs are not as high as we expected.*
+\* *These images are the outliers that have not been detected in data framework 1. The first line is the original images and the second line is the corresponding reconstructed imgages. The reconstructed images look quite similar to the original one, so their MSEs are not as high as we expected. This is why they were noe detected*
 
 And then we compared the performance of the two cases.
 
