@@ -26,13 +26,13 @@ MNIST is a large database containing 70 000 handwritten digits images. 60 000 of
 
 **Outlier detection**: The training data consists of both normal data and outliers.
 
-As we want to do the anomaly detection, we will include a small amount of anomalies in the training set. We built two data frameworks, the detailed information is as follow:
+Some papers did the novelty detection and others did the outilier detection. We want to do both of them, so we created 3 data frameworks. The detailed information is as follow:
 
-<img src="table.png" width="600" height="130">
+<img src="table.png" width="600" height="150">
 
-\**The number of anomalies account for 10% of the number of normal data in both training set and test set, the valid label is the label of the normal and the anormal label is the label for the anomaly*
+\**The number of anomalies account for 5% of the number of normal data in both training set and test set, the valid label is the label of the normal and the anormal label is the label for the anomaly*
 
-We will use these 2 data frameworks to apply the autoencoder model.
+These 3 dataframes will be applied to the different methods of autoencoder.
 
 ### Fashion MNIST Dataset
 
@@ -41,6 +41,7 @@ We will use these 2 data frameworks to apply the autoencoder model.
 Similar to the MNIST dataset, the Fashion MINIST contains 60 000 images in the training set and 10 000 in the test set and the images are also stored as a 28\*28 matrix. The difference is that the images are changed to clothing images. There are ten types of clothing, their types matched with the lable numbers are as follow:
 
 0 T-shirt/top 1 Trouser 2 Pullover 3 Dress 4 Coat 5 Sandal 6 Shirt 7 Sneaker 8 Bag 9 Ankle boot
+
 
 
 ## Three methods applied and their performances
