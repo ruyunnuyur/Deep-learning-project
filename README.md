@@ -95,3 +95,8 @@ In data framework 1, deep autoencoder has the best performance; in data framewor
 Strengths: We tested different autoencoders on different data frameworks.
 
 Weaknesses: We didn't find appropriate way to adjust parameters in neural network framework.
+
+
+## Reference
+https://blog.keras.io/building-autoencoders-in-keras.html
+https://github.com/a-agmon/anomaly_det/blob/master/AnomalyDetectorsVAE-KDD-original.ipynb
