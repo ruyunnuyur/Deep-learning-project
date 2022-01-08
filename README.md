@@ -48,6 +48,9 @@ Similar to the MNIST dataset, the Fashion MINIST contains 60 000 images in the t
 
 0 T-shirt/top 1 Trouser 2 Pullover 3 Dress 4 Coat 5 Sandal 6 Shirt 7 Sneaker 8 Bag 9 Ankle boot
 
+We also built the data framework 4 for the Fashion MNIST Dataset
+
+<img src="table2.png" width="600" height="80">
 
 
 ## Three methods applied and their performances
