@@ -69,11 +69,11 @@ Having read several papers, we decided to implement three autoencoder models bel
 
 First of all, we applied the simple autoencoder on the data framework 1 and data framework 2 
 
-<img src="pictures/illustration.png" width="600" height="80">
+<img src="pictures/illustration.png" width="500" height="300">
 
-\* *The first line is the original images and the second line is the corresponding reconstructed imgages.*
+\* *These images are the outliers that are not detected in data framework 1. The first line is the original images and the second line is the corresponding reconstructed imgages. The reconstructed images looked quite similar to the original one, so their MSEs are not as high as we expected.*
 
-and we compared the performance of the two cases.
+And then we compared the performance of the two cases.
 
 <img src="pictures/result1.png" width="600" height="80">
 
