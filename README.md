@@ -67,7 +67,11 @@ Having read several papers, we decided to implement three autoencoder models bel
 
 **Process**
 
-First of all, we applied the simple autoencoder on the data framework 1 and data framework 2 and we compared the performance of the two cases.
+First of all, we applied the simple autoencoder on the data framework 1 and data framework 2 
+<img src="illustration.png" width="600" height="80">
+
+
+and we compared the performance of the two cases.
 
 <img src="result1.png" width="600" height="80">
 
