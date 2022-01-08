@@ -3,10 +3,10 @@ By Yun RU & Xuran HUANG
 
 <img src="https://github.com/ruyunnuyur/Deep-learning-project/blob/6e812364ccad1bd64d5e10f6fbe37bce35ef3dad/1_F_yiILIE954AZPgPADx76A.png" width="500" height="300">
 
-## Introduction
+## :chicken:Introduction
 There exists many ways to detect anomaly, One-class SVMs, Elliptic Envelopes... These methods belong to the field of machine learning, however there are also many models for anomaly detection in deep learning area. Autoencoders, a type of unsupervised neural network, are exactly one of the models. In the following sections, we will apply three different autoencoders which are simple autoencoder, deep fully-connected autoencoder and variational autoencoder, to detect the outliers in the datasets that we built based on MNIST data and fashionMNIST data and compare their results.
 
-## How to detect the outliers by using autoencoder?
+## :chicken:How to detect the outliers by using autoencoder?
 <img src="pictures/autoencoder_schema.jpg" width="600" height="200">
 The algorithm of autoencoder is composed by two parts: encoder and decoder. The encoder consists in compressing the inputs into a lower-dimensions space (so-called latent-space representaion) and then the decoder attempts to reconstruct the original data based one the lower-dimensions space. The model of autoencoder is an special type of neural network where the hidden layers have fewer neurons than the input layer and the output layer. This condition forces the hidden layers to extract the most important information from the input and get rid of the noises. The reconstructed images often lose some information compared to the original data, thus we could measure the MSE (Mean Square Error) between them to evaluate the performance of the autoencoder.
 
@@ -14,7 +14,7 @@ The algorithm of autoencoder is composed by two parts: encoder and decoder. The 
 
 Given the information above, how can autoencoder detect the outliers? Let's take the case of image for example. Imagine that we trained thousands of images of tiger, our autoencoder is familiar with the pictures of tiger and know how to reconsctruct them with the lowest loss. However, if we give the autoencoder an image of elephant, the autoencoder do not know how to recontruct it into an elephant and the output image will look different from the original image, hence we obtain a high MSE for the outliers. By looking for the observations who have a high MSE between the reconstructed image and original image, we will find the outliers!
 
-## Data discription (MNIST & Fashion MNIST)
+## :chicken:Data discription (MNIST & Fashion MNIST)
 
 ### MNIST Dataset
 
@@ -53,7 +53,7 @@ We also built the data framework 4 for the Fashion MNIST Dataset
 <img src="pictures/table2.png" width="600" height="80">
 
 
-## Three methods applied and their performances
+## :chicken:Three methods applied and their performances
 
 Having read several papers, we decided to implement three autoencoder models below:
 
@@ -65,7 +65,7 @@ Having read several papers, we decided to implement three autoencoder models bel
 
 -- Description refers to *Hands-on Anomaly Detection with Variational Autoencoders*
 
-**Process**
+### :star2:**Process**
 
 First of all, we applied the simple autoencoder on the data framework 1 and data framework 2 
 
@@ -91,7 +91,7 @@ Then we applied the three autoencoder models mentioned above respectively on thr
 
 In data framework 1, deep autoencoder has the best performance; in data framework 3 and 4, simple autoencoder has the best performance. In a more complex dataset (comparing data framework 1 and 3), the performance of all the models decrease significanly. In different kinds of dataset with single normal image (comparing data framework 1 and 4), the performance of models are quite well and similar. Variational autoencoder give the worst result in three cases, so the increase of model’s complexity doesn’t increase certainly the performance of detection, it depends on the data framework we are working on. 
 
-## Strengths and Weaknesses
+## :chicken:Strengths and Weaknesses
 Strengths: We tested different autoencoders on different data frameworks.
 
 Weaknesses: We didn't find appropriate way to adjust parameters in neural network framework.
