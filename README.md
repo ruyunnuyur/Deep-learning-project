@@ -32,9 +32,11 @@ Some papers did the novelty detection and others did the outilier detection. We 
 
 \**The number of anomalies account for 5% of the number of normal data in both training set and test set, the valid label is the label of the normal and the anormal label is the label for the anomaly*
 
-Data framework 1 can be considered as novelty detection, since it contains 0 anomaly in the training set 
-Data framework 2 can be considered as outlier detection, there are 337 outliers in the training set. 
-Data framework 3 can be considered as novelty detection, but we consider all the labels except 8 as normal data
+**Data framework 1** can be considered as novelty detection, since it contains 0 anomaly in the training set 
+
+**Data framework 2** can be considered as outlier detection, there are 337 outliers in the training set. 
+
+**Data framework 3** can be considered as novelty detection, but we consider all the labels except 8 as normal data
 
 These 3 dataframes will be applied to the different models of autoencoder.
 
