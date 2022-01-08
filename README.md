@@ -71,7 +71,7 @@ First of all, we applied the simple autoencoder on the data framework 1 and data
 
 <img src="pictures/illustration.png" width="300" height="150">
 
-\* *These images are the outliers that have not been detected in data framework 1. The first line is the original images and the second line is the corresponding reconstructed imgages. The reconstructed images look quite similar to the original one, so their MSEs are not as high as we expected. This is why they were noe detected*
+\* *These images are the outliers that have not been detected in data framework 1. The first line is the original images and the second line is the corresponding reconstructed imgages. The reconstructed images look quite similar to the original one, so their MSEs are not as high as we expected. This is why they were not detected*
 
 And then we compared the performance of the two cases.
 
@@ -83,9 +83,9 @@ We can see that the performance of Data framework 1 is better than the data fram
 
 Consequently, in pratical, when we want to detect outliers, it is better to train your autoencoder without any outliers. If it is hard to get rid of the outliers from your training set, you can train you autoencoder with a small proportion of outliers. However, the performance will be that good.
 
-As we can get rid of the outliers in the training set, we will not use data framework 2 any more in the following project. We consider only the non contaminated training set.
+As we can get rid of the outliers in the training set, we will not use data framework 2 any more in the following project. We consider only the non-contaminated training set.
 
-Then we applied the three autoencoder models mentioned above respectively on three data frameworks. We used handwriting digits dataset in two different ways: one with single normal digit and another with several normal digits. The aim is to test whether the performance of models will differ largely in dataset with more complex composition. We used both handwriting digits dataset and clothing dataset to see the performance of models in different kinds of dataset. Here are the results.
+Then we applied the three autoencoder models mentioned above respectively on three data frameworks. We used handwriting digits dataset in two different ways: one with single normal digit (Data framework 1) and another with several normal digits (Data framework 3). The aim is to test whether the performance of models will differ largely in dataset with more complex composition. We used both handwriting digits dataset (Data framework 1 and 3) and clothing dataset (Data framework 4) to see the performance of models in different kinds of dataset. Here are the results.
 
 <img src="pictures/table3.png" width="800" height="200">
 
@@ -101,3 +101,7 @@ Weaknesses: We didn't find appropriate way to adjust parameters in neural networ
 https://blog.keras.io/building-autoencoders-in-keras.html
 
 https://github.com/a-agmon/anomaly_det/blob/master/AnomalyDetectorsVAE-KDD-original.ipynb
+
+https://www.analyticsvidhya.com/blog/2021/05/anomaly-detection-using-autoencoders-a-walk-through-in-python/
+
+https://www.pyimagesearch.com/2020/03/02/anomaly-detection-with-keras-tensorflow-and-deep-learning/
