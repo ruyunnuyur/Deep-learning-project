@@ -71,7 +71,7 @@ First of all, we applied the simple autoencoder on the data framework 1 and data
 
 <img src="result1.png" width="600" height="80">
 
-We can see that the performance of Data framework 1 is better than the data framework 2. This is logical because in data framework 2, the training set is contaminated by some outliers. If we train the autoencoder with a dataset including the outliers, the autoencoder may perform good for reconstructing the outliers in the test set since it has seen the outlier in the training set. Thus the mse between the reconstruction and the original image will not be higher than the others, which make us fail to detect some outliers.  
+We can see that the performance of Data framework 1 is better than the data framework 2. This is logical because in data framework 2, the training set is contaminated by some outliers. If we train the autoencoder with a dataset including the outliers, the autoencoder may perform well for reconstructing the outliers in the test set since it has seen the outlier in the training set. Thus the mse between the reconstruction and the original image will not be higher than the others, which make us fail to detect some outliers.  
 
 Consequently, in pratical, when we want to detect outliers, it is better to train your autoencoder without any outliers. If it is hard to get rid of the outliers from your training set, you can train you autoencoder with a small proportion of outliers. However, the performance will be that good.
 
