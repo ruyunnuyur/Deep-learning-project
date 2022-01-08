@@ -77,8 +77,11 @@ Consequently, in pratical, when we want to detect outliers, it is better to trai
 
 As we can get rid of the outliers in the training set, we will not use data framework 2 any more in the following project. We consider only the non contaminated training set.
 
+Then we applied the three autoencoder models mentioned above respectively on three data frameworks. We used handwriting digits dataset in two different ways: one with single normal digit and another with several normal digits. The aim is to test whether the performance of models will differ largely in dataset with more complex composition. We used both handwriting digits dataset and clothing dataset to see the performance of models in different kinds of dataset. Here are the results.
 
+<img src="table3.png" width="600" height="80">
 
-## What about other database? Applied on FashionMNIST
+In data framework 1, deep autoencoder has the best performance; in data framework 3 and 4, simple autoencoder has the best performance. In a more complex dataset (comparing data framework 1 and 3), the performance of all the models decrease significanly. In different kinds of dataset with single normal image (comparing data framework 1 and 4), the performance of models are quite well and similar. Variational autoencoder give the worst result in three cases, so the increase of model’s complexity doesn’t increase certainly the performance of detection, it depends on the data framework we are working on. 
+
 ## Strengths and Weaknesses
 size of train set?
