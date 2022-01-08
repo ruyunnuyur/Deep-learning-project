@@ -45,7 +45,7 @@ Similar to the MNIST dataset, the Fashion MINIST contains 60 000 images in the t
 
 ## Three methods applied and their performances
 
-**Simple autoencoder**: Simple autoencoder is the simplest model to start with. It is consist of an encoder model with a single fully-connected layer, and a decoder model also with a single fully-connected layer. We use 'sigmoid' as activation function for decoder layer because we want to have a 
+**Simple autoencoder**: Simple autoencoder is the simplest model to start with. It is consist of an encoder model with a single fully-connected layer, and a decoder model also with a single fully-connected layer. We use 'sigmoid' as activation function for decoder layer because we want a binary result.
 
 **Deep fully-connected autoencoder**: Instead of using one layer for encoder model and decoder model respectively, we can use several layers to add complexity to the model. More layers allow the model to learn more detailed relationships within the data and how the features interact with each other on a non-linear level.
 
