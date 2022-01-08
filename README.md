@@ -84,4 +84,5 @@ Then we applied the three autoencoder models mentioned above respectively on thr
 In data framework 1, deep autoencoder has the best performance; in data framework 3 and 4, simple autoencoder has the best performance. In a more complex dataset (comparing data framework 1 and 3), the performance of all the models decrease significanly. In different kinds of dataset with single normal image (comparing data framework 1 and 4), the performance of models are quite well and similar. Variational autoencoder give the worst result in three cases, so the increase of model’s complexity doesn’t increase certainly the performance of detection, it depends on the data framework we are working on. 
 
 ## Strengths and Weaknesses
-size of train set?
+Strengths: We tested different autoencoders on different data frameworks.
+Weaknesses: We didn't find appropriate way to adjust parameters in neural network framework.
