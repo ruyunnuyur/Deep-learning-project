@@ -99,4 +99,5 @@ Weaknesses: We didn't find appropriate way to adjust parameters in neural networ
 
 ## Reference
 https://blog.keras.io/building-autoencoders-in-keras.html
+
 https://github.com/a-agmon/anomaly_det/blob/master/AnomalyDetectorsVAE-KDD-original.ipynb
